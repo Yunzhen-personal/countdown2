@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 
-    <title>Countdown to 10/17 9AM</title>
+    <title>Basic Eletronic </title>
     <style>
         body {
             text-align: center;
@@ -48,7 +48,7 @@
         <h2 class="box" id="seconds"></h2>
         <h2>
             Left until <br>             
-            <span style="font-size: 1.5em;">10/25 15:30 </span>
+            <span style="font-size: 1.5em;">10/25 3PM </span>
         </h2>
     </div>
 
@@ -62,7 +62,7 @@
 
     function showRemaining() {
         const now = new Date();
-        const targetDate = new Date(now.getFullYear(), 9, 25, 15, 30, 0);  // 10月(9) 25日 15:30
+        const targetDate = new Date(now.getFullYear(), 9, 25, 15, 0, 0);  // 10月(9) 25日 15:00
         
         const timeDifference = targetDate - now;  // 目標時間與現在時間的差距（毫秒）
         
